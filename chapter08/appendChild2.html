@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 연습</title>
+  <style>
+    #container{width: 600px; margin: 50px auto;}
+  </style>
+  <script>
+    function addP(){
+      var newP = document.createElement("p");   //p태그 요소 노드 만들기
+      var text = document.createTextNode("안녕하세요~ 숨겨진 텍스트입니다."); //text 노드 만들기
+      newP.appendChild(text);  //p와 text 자식노드 연결하기
+      document.getElementById("info").appendChild(newP);  //p를 부모인 div에 연결하기
+    }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <h1>DOM 노드 추가하기</h1>
+    <!-- this.onclick=''; addP() 함수가 1번만 실행됨 -->
+    <a href="#" onclick="addP(); this.onclick='';">더 보기</a>
+    <div id="info"></div>
+  </div>
+</body>
+</html>

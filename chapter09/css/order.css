@@ -1,0 +1,38 @@
+/* 너비 500px 가운데 정렬 */
+#container{width: 500px;margin: 30px auto;}
+/* 필드셋 간격 조정 */
+fieldset{
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+legend{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* 리스트의 불릿 제거, 간격을 떨어지게*/
+ul li{
+    list-style: none;
+    margin: 20px;
+}
+/* 레이블 너비 - 80px 배치 -float */
+.field{ 
+    width: 70px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    line-height: 2em;
+}
+/* 입력상자 너비 - 250px, 높이-30px ,둥근 모서리 */
+.input-box{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* 너비-100% */
+.order{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 범위</title>
+    <script>
+        var sum1 = 10;
+        function add1(){
+            sum1 = 20;
+        }
+        add1();
+        console.log("전역" + sum1);  //20
+
+        var sum2 = 10;
+        function add2(){
+            var sum2 = 20;
+            console.log("지역" + sum2);  //20
+        }
+        add2();
+        console.log("전역" + sum2);  //10
+
+        //var는 똑같은 변수이름 사용가능 - 비추
+        var num1 = 50;
+        if(num1 === 50){
+            var num1 = 60;
+        }
+        console.log("지역" + num1);  //60
+
+        let num2 = 50;
+        if(num2 === 50){
+            let num2 = 60;
+            console.log("지역" + num2);  //60
+        }
+        console.log("전역" + num2);  //50
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 객체</title>
+    <script>
+        window.onload = function(){
+            var form1 = document.form1;
+            console.log(form1.search.placeholder);
+            console.log(document.forms[0].elements[0].placeholder);
+            console.log(document.forms['form1'].elements['search'].placeholder);
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="form1">
+        <input type="search" name="search" placeholder="검색어입력">
+        <input type="submit" value="확인">
+    </form>
+</body>
+</html>

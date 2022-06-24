@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window 객체 사용하기</title>
+</head>
+<body>
+    <script>
+        var myWindow;  //새 창
+
+        function openWin(){
+            myWindow = window.open("", "myWindow", "top=100, left=100, width=200, height=200");
+            myWindow.document.write("<p style='color:blue'>새 창입니다.</p>");
+            myWindow.document.write("<a href='javascript:window.close()'>창 닫기</a>");
+            //<a> 태그로 창닫기
+        }
+       
+        function closeWin(){
+            myWindow.close();  //창 닫기
+        }
+    </script>
+    <button onclick="openWin()">창 열기</button>
+    <!-- <button onclick="closeWin()">창 닫기</button> -->
+</body>
+</html>

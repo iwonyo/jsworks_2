@@ -1,0 +1,16 @@
+.menu {width: 400px; margin: 30px 10px 10px 50px;}
+.menu ul{ list-style: none; padding: 0; text-align: center;}
+.menu ul li{
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+}
+.menu ul li a{text-decoration: none; color: #000;}
+.box{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 50px;
+}

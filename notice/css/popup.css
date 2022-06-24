@@ -1,0 +1,23 @@
+/* 팝업 창 */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+#content{
+    width: 330px;
+    height: 380px;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 20px;
+    position: relative;
+}
+#content h2{margin: 20px 10px;}
+#content ul{margin: 30px 10px;}
+#content ul li{margin: 10px; color: #00f;}
+#content p{line-height: 2em;}
+#content .close{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}

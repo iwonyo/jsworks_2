@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>연습 2</title>
+    <style>
+        body{font-size: 1.5em;}
+    </style>
+</head>
+<body>
+    <script>
+       var data = function(x, y){  //매개변수 2개
+            if(x===y){
+                return x * y;
+            }
+            else{ 
+                return x + y;
+            }
+        }
+
+        var num1 = data(10, 10); 
+        var num2 = data(5, 10);
+
+        document.write("num1 = " + num1 + '<br>');
+        document.write("num1 = " + num2 + '<br>');
+    </script>
+</body>
+</html>

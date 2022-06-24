@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <script>
+        function getCookie(name) { 
+            var cookie = document.cookie; 
+
+            if (document.cookie != "") { 
+                var cookie_array = cookie.split("; "); 
+
+                for (var index in cookie_array) { 
+                    var cookie_name = cookie_array[index].split("="); 
+                    if (cookie_name[0] == "popupYN") { 
+                        return cookie_name[1]; 
+                    } 
+                } 
+            } 
+            return ; 
+        } 
+            
+        function openPopup(url) { 
+            var cookieCheck = getCookie("popupYN"); 
+            if (cookieCheck != "N") 
+                window.open(url, '', 'width=450,height=750,left=0,top=0') 
+        }
+    </script>
+</head>
+<body onload="javascript:openPopup('popup.html')">
+    <h1>메인 페이지입니다.</h1>
+</body>
+</html>

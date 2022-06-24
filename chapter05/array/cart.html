@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  <script>
+    var arr = new Array(4);
+    document.write("배열의 길이 : " + arr.length + "개<br>");
+    document.write("arr : " + arr + '<br>');
+
+    //저장
+    var cart = new Array("생수", "라면", "커피", "계란");
+    document.write("cart : " + cart + '<br>');
+
+    //조회
+    for(var i = 0; i < cart.length; i++){
+      document.write(cart[i] + ' ');
+    }
+    document.write('<br>')
+
+    //변경
+    cart[2] = "녹차"; 
+
+    //for ~ in 반복문
+    for(var i in cart){
+      document.write(cart[i] + ' ');
+    }
+
+  </script>
+</body>
+</html>

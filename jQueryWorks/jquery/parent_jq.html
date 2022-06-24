@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 예제</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+        .content{width: 800px; margin:0 auto;}
+        .wrap *{ /*.wrap, ul, li, span*/
+            display: block;
+            border: 2px solid #ddd;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="wrap">
+            <ul>ul (grandparent)  
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>   
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            /* li태그 style 적용 */
+            $("span").parent().css({"color":"red", "border":"2px solid blue"});
+        });
+     </script>
+</body>
+</html>

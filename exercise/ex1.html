@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>연습 1</title>
+    <style>
+        #wrap{
+            width: 600px;
+            margin:0 auto;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        p{font-weight: 700;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>3의 배수 찾기</h2>
+        <script>
+            var count = 0;
+            for(var i = 1; i <= 100; i++){
+                if(i % 3 === 0){
+                    count += 1;   //count = count + 1
+                    document.write(i + ", ");
+                }
+            }
+            document.write("<p>3의 배수의 개수 : " + count + "</p>");
+        </script>
+    </div>
+</body>
+</html>

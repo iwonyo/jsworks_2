@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - 이중 for문</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <script>
+        //다이아몬드 모양의 별 - 변수를 활용
+        var row = 7;
+        var star = 1;
+        var space = row - 1;
+        for(i=1; i<=row; i++){ //행이 5번 반복
+            for(j=1; j<=space; j++){ //열이 5번 반복
+                document.write("&nbsp")
+            }
+            for(j=1; j<=star; j++){ //열이 5번 반복
+                document.write("*")
+            }
+            if(i<=row/2){
+                space -= 1;
+                star += 2;
+            }
+            else{
+                space += 1;
+                star -= 2;
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+#item{width: 500px; margin: 0 auto; position: relative;}
+.over{position: absolute; top : 260px; left : 20px;}
+.text{width: 400px; display: none; line-height: 1.5em;}

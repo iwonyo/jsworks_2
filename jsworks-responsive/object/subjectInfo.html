@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 정의 및 사용</title>
+    <script>
+        class Subject{
+            constructor(subjectName, credit){
+                this.subjectName = subjectName;
+                this.credit = credit;
+                this.times = [30, 40, 60];
+                this.time = this.times[0];
+            }
+            printOut(){
+                return '과목 : ' + this.subjectName + ', 학점 : ' + this.credit +
+                       ', 수업시간 : ' + this.time;  
+            }
+            get lessonTime(){
+                return this.time;
+            }
+            set lessonTime(num){
+                this.time = this.times[num];
+            }
+        }
+        var subject1 = new Subject('html', 1);
+        console.log(subject1.subjectName);
+        console.log(subject1.printOut());
+        console.log(subject1.lessonTime);
+        subject1.lessonTime = 1;
+        console.log(subject1.lessonTime);
+
+        var subject2 = new Subject("css", 2);
+        console.log(subject2.subjectName);
+        subject2.lessonTime = 2;
+        console.log(subject2.printOut());
+    </script>
+</head>
+<body>
+</body>
+</html>

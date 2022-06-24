@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //호이스팅(hoisting)
+    var x = 10;
+
+    function displayNumber(){
+      //var y;  y가 선언된 것으로 간주함
+      console.log("x is " + x);
+      console.log("y is " + y);
+      var y = 20;   //변수를 나중에 선언
+
+    }
+
+    displayNumber();  
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개팅 구현</title>
+</head>
+<body>
+    <script>
+        var gender = prompt("성별을 입력하세요.", "여성");
+
+        var age = prompt('나이를 입력하세요.', '20');
+        
+        var result = (gender=="여성") && (age >= 20) && (age < 30);
+
+        document.write("결과 : " + result + '<br>');
+    </script>
+</body>
+</html>

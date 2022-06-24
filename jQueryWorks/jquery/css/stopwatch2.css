@@ -1,0 +1,30 @@
+*{margin: 0px; padding: 0px;}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+.box{width: 200px; height: 200px;}
+.runBox{width: 200px; margin: 10px; text-align: center;}
+.runBox .fa-person-running{
+    font-size: 70pt; 
+}
+.runBox .fa-person-running.on{
+    font-size: 80pt; 
+}
+.timerBox{width: 200px; outline: 2px solid black;}
+.timerBox .time{
+    font-size: 30pt;
+    color: #444;
+    text-align: center;
+}
+.btnBox{margin: 20px auto; text-align: center;}
+.btnBox .fa-play, .fa-pause, .fa-stop{
+    margin: 0px 5px;
+    font-size: 30pt;
+    color: #ff6600;
+    cursor: pointer;
+}
+

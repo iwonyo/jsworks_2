@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수 만들기</title>
+
+</head>
+<body>
+    <script>
+        //생성자 함수(클래스)
+       function Person(name, age, isMerried){ 
+           this.name = name;
+           this.age = age;
+           this.isMerried = isMerried;
+
+           this.info = function(){
+               if(this.isMerried){
+                   document.write(this.name + "는(은) 기혼입니다<br>");
+               }
+               else{
+                   document.write(this.name + "는(은) 미혼입니다<br>");
+               }
+           }
+       }
+
+       // Person 객체 생성하기
+       let chu = new Person("추신수", 39, true);
+       document.write("이름 : " + chu.name + "<br>");
+       document.write("나이 : " + chu.age + "<br>");
+       chu.info();
+
+       let son = new Person('손흥민', 29, false);
+       document.write("이름 : " + son.name + "<br>");
+       document.write("나이 : " + son.age + "<br>");
+
+       let hong = new Person('홍길동', 44, true);
+       document.write("이름 : " + hong.name + "<br>");
+       document.write("나이 : " + hong.age + "<br>");
+
+       hong.info();
+    </script>
+</body>
+</html>

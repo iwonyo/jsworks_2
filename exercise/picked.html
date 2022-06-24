@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{text-align: center;}
+    h1{
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 10px;
+      background-color: #eee;
+    }
+    p{font-size: 1.2em;}
+  </style>
+</head>
+<body>
+  <h1>당첨자 발표</h1>
+  <script>
+    var member = prompt("전체 응모자 수 : ");
+
+    if(member != null){
+      var picked = Math.floor(Math.random() *  member) + 1;
+
+      document.write("<p>전체 응모자 수 : " + member + "명</p>");
+      document.write("<p>당첨자 : " + picked + "번</p>");
+    }
+  </script>
+</body>
+</html>

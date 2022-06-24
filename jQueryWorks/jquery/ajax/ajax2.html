@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>$.ajax() 메서드</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            type: "GET",
+            url: "score.json",
+            dataType: "json",
+            success: function(data) { //data는 score.json
+                let el = "";
+                //console.log(data);
+                $.each(data, function(index, obj) {                    
+                    el += "<tr>";
+                    el += "<th scope='row'>" + obj.name + "</th>";
+                    el += "<td>" + obj.score1 + "</td>";
+                    el += "<td>" + obj.score2 + "</td>";
+                    el += "<td>" + obj.score3 + "</td>";                  
+                    el += "</tr>";
+                });
+                $("table tbody").append(el); //el을 <tbody>에 추가
+            },
+            error: function(xhr) {
+                console.log(xhr.status + "/" + xhr.errorText);
+            }
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <caption>학생별 시험 점수</caption>
+        <thead>
+            <tr>
+                <th scope="col">이름</th>
+                <th scope="col">html</th>
+                <th scope="col">css</th>
+                <th scope="col">javascript</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>

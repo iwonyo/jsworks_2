@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval 사용하기</title>
+    <style>
+        body{
+            font-size: 1.5em;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>디지털 시계</h2>
+    <p id="demo"></p>
+    <script>
+       // myWatch를 1초에 1번씩 호출
+       const watch = setInterval(myWatch, 1000);
+       
+       function myWatch(){
+           const date = new Date();  //날짜와 시간 생성
+           var now = date.toLocaleTimeString();   //시간을 한글로 표시
+           document.querySelector("#demo").innerHTML = now;
+       }
+
+       //실행 함수로 구현
+       /*const watch = setInterval(function(){
+            const date = new Date(); 
+            let now = date.toLocaleTimeString(); 
+            document.querySelector("#demo").innerHTML = now;
+       }, 1000)*/
+    </script>
+</body>
+</html>

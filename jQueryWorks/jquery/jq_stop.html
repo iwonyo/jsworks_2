@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div{
+        width: 100px; height: 100px;
+        background: #0f0;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+    $(document).ready(function(){
+        $("#start").click(function(){
+            $("div").animate({height: 300}, 2000);
+            $("div").animate({width: 300}, 2000);
+        });
+        $("#stop").click(function(){
+            $("div").stop();
+        });
+    });
+</script> 
+</head>
+<body>
+    <p>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </p>
+
+    <div></div>
+</body>
+</html>

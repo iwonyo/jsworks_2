@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 만들기</title>
+</head>
+<body>
+    <h2>즉시 실행 함수</h2>
+    <script>
+        (function(n1, n2){
+           sum = n1 + n2;
+        }(10, 20));
+        var sum;    //전역 변수(생략 가능)
+        document.write("실행 결과 : " + sum);
+    </script>
+   
+</body>
+</html>

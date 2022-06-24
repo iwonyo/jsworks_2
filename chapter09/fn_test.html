@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규표현식 </title>
+</head>
+<body>
+    <script>
+        //문자열 일치 여부 
+        //방법1 - RegExp(표현식)
+        //방법2 - /표현식/
+        
+        let text = "Hello World"
+
+        let pattern1 = new RegExp("Hello")
+        let result = pattern1.test(text)
+        console.log(result)
+
+        let pattern2 = /World/g    //'g'는 전역 검색(생략 가능)
+        let result2 = pattern2.test(text)
+        console.log(result2)
+
+        //문자열 및 글자수 일치 여부
+        let id = "a123"
+
+        let regEx = /[0-9A-Za-z]{5}/  //정규 표현식 사용
+        console.log(regEx.test(id))
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체 </title>
+</head>
+<body>
+    <script>
+        //1~10까지의 자연수 중 무작위로 추출하기
+        var rand = Math.floor(Math.random()*10) + 1;
+        console.log(rand);
+
+        //주사위 10번 던지기
+        var dice = function(){
+            var rand = Math.floor(Math.random()*6) + 1;
+            return rand;
+        }
+
+        //console.log("주사위 눈 : "  + dice());
+
+        for(var i=1; i<=10; i++){
+            console.log("주사위 눈 : "  + dice());
+        }
+
+        /*주사위 게임 - 주사위 2개를 10번 던지기
+          두 눈의 합계가 8이면 "Eight Thrown!", 11이면 "Eleven Thrown!",
+          두 눈의 수가 같으면 "Double Thrown!!" 출력
+          */
+        for(var i = 1; i <= 10; i++){
+            let dice1 = Math.floor(Math.random()*6) + 1;
+            let dice2 = Math.floor(Math.random()*6) + 1;
+            let total = dice1 + dice2;
+            console.log(total);
+            if(total == 8){
+                console.log("Eight Thrown!");
+            }
+            if(total == 11){
+                console.log("Eleven Thrown!");
+            }
+            if(dice1 == dice2){
+                console.log("Double Thrown!");
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#contents{
+    border: 2px solid #4dbbfa;
+    border-radius: 5px;
+    padding: 10px;
+}
+h2{padding: 10px;}
+p{line-height: 2em; font-size: 1em;}
+button{width: 100%;}
+.close{text-align: right; padding-right: 10px;}
+a{text-decoration: none; color: #222; font-size: 0.9em;}
+a:hover{text-decoration: underline; color: tomato}

@@ -1,0 +1,33 @@
+#contents{
+    width: 450px;
+    margin: 0 auto;
+}
+img{
+    float: left;
+    margin-right: 20px;
+}
+ul{
+    list-style: none;
+    padding-top: 40px;
+}
+ul li{
+    margin-bottom: 10px;
+}
+li label{
+    width: 80px;
+    float: left;
+    text-align: right;
+}
+input[type="text"]{
+    width: 110px;
+    padding: 5px;
+    margin: 0 10px;
+}
+button{
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-left: 40px;
+}
+#showResult{
+    font-size: 1.3em;
+}

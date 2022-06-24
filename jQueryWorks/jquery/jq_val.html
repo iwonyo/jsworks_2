@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+  <script>
+    $(document).ready(function(){
+      $("button").on("click", function(){
+        let text = $("#t_input").val(); //입력값 저장
+        $("#t_output").val(text);       //입력값을 매개변수로 전달
+      })
+
+      // $("button").click(function(){
+      //   let text = $("#t_input").val();
+      //   $("#t_output").val(text);
+      // })
+    });
+  </script>
+</head>
+<body>
+  <input type="text" id="t_input">
+  <button type="button">입력</button>
+  <p>결과 <input type="text" id="t_output" disabled></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $("#list1 li:odd").css("background", "yellow"); //1, 3, 5...
+            $("#list1 li:even").css("background", "gray");  //0, 2, 4...
+            $("#list1 li:first").css("color", "red");  
+            $("#list1 li:last").css("color", "blue");    
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>탐색 선택자</h1>
+        <ul id="list1">
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li>리스트5</li>
+            <li>리스트6</li>
+            <li>리스트7</li>
+        </ul>
+    </div>
+</body>
+</html>

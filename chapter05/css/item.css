@@ -1,0 +1,21 @@
+#wrap{
+    width: 600px;
+    margin:0 auto;
+}
+h2{text-align: center;}
+form{
+    background-color: rgb(80, 80, 252);
+    text-align: center;
+    padding: 30px 40px;
+}
+input{
+    width: 420px;
+    padding: 10px;
+}
+button{
+    width: 60px;
+    padding: 10px;
+}
+p{
+    margin-top: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>자바 스크립트 예제</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        h2{color: blue;}
+    </style>
+</head>
+<body>
+    <h2>알림창 띄우기</h2>
+    <p id="demo"></p>
+    <!-- onclick 속성 -> alert() 함수 호출-->
+    <button onclick="myFunction()">확인</button>
+    
+
+    <!-- <button onclick="myFunction()">확인</button> -->
+
+    <!-- 함수 사용하기 -->
+    <script>
+        function myFunction(){
+            // alert("오늘도 좋은 하루 되세요!!");
+           var str = document.write("안녕");
+           document.getElementById("demo").innerHTML = str;
+        }
+    </script>
+</body>
+</html>

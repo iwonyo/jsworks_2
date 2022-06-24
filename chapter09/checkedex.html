@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked 속성 예제</title>
+</head>
+<body>
+   Checkbox: <input type="checkbox" id="myCheck">
+
+   <button onclick="check()">체크</button>
+   <button onclick="unCheck()">해제</button>
+
+   <script>
+       function check(){
+           document.getElementById("myCheck").checked = true;
+       }
+
+       function unCheck(){
+           document.getElementById("myCheck").checked = false;
+       }
+   </script>
+</body>
+</html>

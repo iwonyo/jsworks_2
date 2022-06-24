@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>push() 함수</title>
+</head>
+<body>
+    <script>
+        let numbers = [1, 3, 5, 7, 9];
+        let sum_v = 0;
+
+        for(let i = 0; i < numbers.length; i++){
+            sum_v += numbers[i];   //누적 합계
+        } 
+
+        numbers.push(sum_v);  //sum_v 맨 뒤에 추가
+
+        //출력
+        for(let item in numbers)
+            document.write(numbers[item] + " ");
+
+    </script>
+</body>
+</html>

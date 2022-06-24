@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth();
+        var date = today.getDate();
+        var day = today.getDay();
+        document.write("년도: " + year + "<br>");
+        document.write("월: " + month + "<br>");
+        document.write("일: " + date + "<br>");
+
+        var str = "hello welcome";
+
+        document.write(str.charAt(6) + "<br>");
+        document.write(str.indexOf("w") + "<br>");
+        document.write(str.lastIndexOf("o") + "<br>");
+
+        var arr = new Array("갑", "을", "병", "정");
+        document.write(arr[0] + "<br>");
+
+
+    </script>
+</body>
+</html>

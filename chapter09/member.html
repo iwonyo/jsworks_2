@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <style>
+        form{width: 350px;}
+        fieldset{margin-bottom: 10px;}
+        label{width: 100px; float: left;}
+    </style>
+    <script src="./js/checkmember.js"></script>
+</head>
+<body>
+    <h2>회원 가입</h2>
+        <form action="" method="post" name="regForm">
+            <fieldset>
+                <p>
+                    <label for="mid">아이디</label>
+                    <input type="text" id="mid" name="mid">
+                </p>
+                <p>
+                    <label for="passwd">비밀번호</label>
+                    <input type="text" id="passwd" name="passwd">
+                </p>
+                <p>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name"> 
+                </p>
+            </fieldset>
+            <div>
+                <input type="button" value="가입" onclick="checkMember()">
+                <input type="reset" value="취소">
+            </div>
+        </form>
+</body>
+</html>

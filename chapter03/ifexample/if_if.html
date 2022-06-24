@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if 중첩 구문</title>
+</head>
+<body>
+  <h3>if 중첩문</h3>
+
+  <script>
+    /*
+      입력한 정수가 10 이상인 짝수인지 홀수인지를 판별하고
+      아니면 정수가 10 미만이며 짝수인지 홀수인지 판별하는 프로그램
+    */
+    var num = prompt("정수를 입력하세요: ", "0");
+
+    if(num >= 10){
+      if(num % 2 == 0){
+        document.write("10 이상의 짝수입니다.");
+      }
+      else{
+        document.write("10 이상의 홀수입니다.");
+      }
+    }
+    else{
+      if(num % 2 == 0){
+        document.write("10 미만의 짝수입니다.");
+      }
+      else{
+        document.write("10 미만의 홀수입니다.");
+      }
+    }
+  </script>
+</body>
+</html>

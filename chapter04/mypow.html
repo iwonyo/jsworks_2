@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>거듭제곱 함수 만들기</title>
+</head>
+<body>
+    <h2>거듭 제곱 함수 만들기</h2>
+    <script>
+        let result = 0;
+        result = myPow(2, 4);
+        document.write(result);
+
+        function myPow(a, b){
+            let pow = 1;
+            for(let i = 0; i < b; i++){
+                pow = pow * a;    //pow *= a
+            }
+            /*
+             i = 0,  1 x 2
+             i = 1,  1 x 2 x 2
+             i = 2,  1 x 2 x 2 x 2
+             i = 3,  1 x 2 x 2 x 2 x 2
+            */
+            return pow;
+        }
+    </script>
+</body>
+</html>

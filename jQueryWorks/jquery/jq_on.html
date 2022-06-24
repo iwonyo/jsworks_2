@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 예제</title>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script>
+    $(function(){
+      $('p').on('mouseover', function(){
+        $(this).hide()
+      })
+
+      $('p').on('mouseout', function(){
+        $(this).show()
+      })
+    });
+  </script>
+</head>
+<body>
+  <p>나를 클릭하면, 내가 사라질 것이다.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 주요 함수</title>
+    <style>
+        body{font-size: 1.5em;}
+        button{font-size: 1.5rem;}
+    </style>
+</head>
+<body>
+    <h3>문자열의 위치 찾기</h3>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var str = "Hello world, welcome to the world";
+            var n1 = str.indexOf("world"); 
+            //앞에서 찾아서 인덱스 반환
+            //대소문자 구분하고 없으면 -1을 반환함
+
+            var n2 = str.lastIndexOf("world");
+            //뒤에서 부터 찾아서 인덱스를 반환함
+            document.getElementById("demo").innerHTML = n1 + '&nbsp' +  n2;
+        }
+    </script>
+</body>
+</html>

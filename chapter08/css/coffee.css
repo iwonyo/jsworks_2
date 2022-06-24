@@ -1,0 +1,19 @@
+#container{width: 600px; margin: 0 auto;}
+.small{width: 60px; height: 60px;}
+#small-pic{margin: 10px 5px;}
+#prod-pic{float: left; margin: 20px 10px;}
+#desc{
+    width: 300px; float: left;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+hr{clear: both;}
+#desc ul{list-style: none;}
+#desc li{line-height: 1.8;}
+#desc button{margin: 20px 5px; width: 100%; padding: 10px}
+#desc a{text-decoration: none; color: blue; padding-left: 40px;}
+#detail{padding: 10px; display: none;}
+#detail li{font-size: 0.9em; line-height: 1.4;}
+h2{font-size: 1.5em; color: #bebebe; font-weight: normal;}
+h3{font-size: 1.1em; color: #222}
+p{font-size: 0.9em; line-height: 1.4; text-align: justify;}

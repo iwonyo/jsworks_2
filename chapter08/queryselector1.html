@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>value 속성 예제</title>
+    <script>
+       function myFunction(){
+           document.querySelector("#myText").value = "최정보";
+       }
+   </script>
+</head>
+<body>
+   <p>이름 : <input type="text" id="myText" value="오상식" disabled></p>
+   <p>클릭하면 이름이 변경됩니다.</p>
+   <button onclick="myFunction()">클릭</button>
+
+   <!-- <script>
+       function myFunction(){
+           document.querySelector("#myText").value = "최정보";
+       }
+   </script> -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노드의 속성 삭제하기</title>
+    <style>
+        .democlass {color: red;}
+    </style>
+    <script>
+        function myFunction() {
+        //   document.getElementsByTagName("H1")[0].removeAttribute("class"); 
+          document.querySelector(".democlass").removeAttribute("class"); 
+        }
+    </script>
+</head>
+<body>
+    <h1 class="democlass">Hello World</h1>
+
+    <button onclick="myFunction()">Try it</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - while문</title>
+</head>
+<body>
+    <script>
+      //1부터 5까지의 합계
+      sum_v = 0;
+      sum_v = sum_v + 1;  //1 = 0 + 1 
+      sum_v = sum_v + 2;  //3 = 1 + 2
+      sum_v = sum_v + 3;  //6 = 3 + 3
+      sum_v = sum_v + 4;  //10 = 6 + 4
+      sum_v = sum_v + 5;  //15 = 10 + 5
+
+       //i = 0일때
+       let i = 0;
+
+       while(i < 10){  //조건
+         //증감값
+         i++;
+         sum_v += i;
+         
+       }
+       document.write("합계 : " + sum_v);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse 이벤트</title>
+    <style>
+        .bg{
+            padding: 40px;
+            background-color: #ccc;
+            margin-bottom: 40px;
+        }
+        .inner{
+            padding: 20px;
+            background-color: #999;
+        }
+    </style>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $(".wrap1").mouseover(function(){
+                $(".display").append("<strong>마우스오버</strong>");
+            });
+            $(".wrap2").mouseenter(function(){
+                $(".display").append("<em>마우스들어감</em>");
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap1 bg">
+        <div class="inner">mouseover</div>
+    </div>
+    <div class="wrap2 bg">
+        <div class="inner">mouseenter</div>
+    </div>
+    <div class="display"></div>
+</body>
+</html>

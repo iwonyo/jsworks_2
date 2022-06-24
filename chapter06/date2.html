@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date 객체</title>
+</head>
+<body>
+  <h2>날짜/시간을 알려주는 Date 객체</h2>
+  <script>
+    const NOW = new Date();
+    
+    document.write("현재 년도 : " + NOW.getFullYear() + '<br>');
+    document.write("현재 월 : " + (NOW.getMonth() + 1) + '<br>');
+    document.write("현재 일 : " + NOW.getDate() + '<br>');
+    document.write("현재 요일 : " + NOW.getDay() + '<br>');
+
+    document.write("<br>======= 시간 ========<br>") 
+    document.write("현재 시: " + NOW.getHours() + '<br>');
+    document.write("현재 분: " + NOW.getMinutes() + '<br>');
+    document.write("현재 초: " + NOW.getSeconds() + '<br>');
+    document.write("현재까지 시간 : " + NOW.getTime()/1000 + '초<br>');
+  </script>
+</body>
+</html>

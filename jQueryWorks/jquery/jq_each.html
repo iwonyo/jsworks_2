@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>each()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("li").each(function(index, element){
+                    alert($(this).text());
+                    console.log(index, element);
+                });
+
+                $("li").text(function(index, element){
+                    console.log(index, element);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>알림창 실행</button>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>여행 준비물 점검 프로그램</title>
+        <link rel="stylesheet" href="css/item.css">
+        <link rel="stylesheet" href="css/list.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <h2>여행 준비물 점검 목록</h2>
+            <form action="addProcess.jsp" method="post">
+                <input type="text" name="item" id="item" autofocus>
+                <button type="button" id="add" class="addBtn">추가</button>
+            </form>
+            <p id="itemList"></p>
+        </div>
+        <script src="js/item.js"></script>
+    </body>
+</html>

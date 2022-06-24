@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{list-style: none; margin-top : 50px;}
+    ul li{
+      display: inline;
+      border: 1px solid #ccc;
+      margin: 5px;
+      padding: 10px 40px;
+    }
+    ul li a{text-decoration: none; color: black;}
+    div{
+      width: 400px;
+      height: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 30px 40px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#" onclick="changeBg('green')">Green</a></li>
+    <li><a href="#" onclick="changeBg('black')">Black</a></li>
+    <li><a href="#" onclick="changeBg('pink')">Red</a></li>
+  </ul>
+  <div id="rec"></div>
+  <script>
+    function changeBg(color){
+      let rec = document.querySelector('#rec');
+      rec.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>

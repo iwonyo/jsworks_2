@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var book = {
+      title : "HTML+CSS+자바스크립트",
+      author : "고경희",
+      pages : 500,
+      price : 30000,
+
+      info : function(){
+        alert(this.title + "책의 분량은 " + this.pages + "페이지 입니다.");
+      }
+    }
+    document.write("저자 : " + book.author);
+    book.info();
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h3{color: blue;}
+    </style>
+</head>
+<body>
+    <section>
+        <h2>인사하기</h2>
+        <h3 id="demo"></h3>
+    </section>
+    
+    <script>
+        let message = ["생일 축하해!!", "고맙습니다.", "오늘도 좋은 하루!!"];
+        let msgIdx = 0;  //message 인덱스
+       
+        myGreeting();   //함수 호출
+       
+        function myGreeting() {
+            document.getElementById("demo").innerHTML = message[msgIdx];
+            msgIdx++;  //1 증가시킴
+            if(msgIdx === message.length)
+                msgIdx = 0;
+            setTimeout(myGreeting, 3000); //콜백 함수
+        }
+    </script>
+</body>
+</html>

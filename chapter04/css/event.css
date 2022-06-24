@@ -1,0 +1,4 @@
+/* flower.css */
+#item{width: 420px; margin: 0 auto; position: relative;}
+.btn_show{position: absolute; top : 260px; left : 15px;}
+.text{width: 400px; display:none; line-height: 1.7em; padding: 5px;}

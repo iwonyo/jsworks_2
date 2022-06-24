@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트</title>
+    <script>
+        function changePic(){
+            //document.getElementById("pic").src = "images/cup-2.png";
+
+            var pic = document.querySelector("#pic"); 
+            pic.src = "images/cup-2.png";
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <img src="images/cup-1.png" onclick="changePic()" id="pic" >
+    </div>
+    
+</body>
+</html>

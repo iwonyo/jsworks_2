@@ -1,0 +1,18 @@
+#content{
+  border: 2px solid #00f;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  width: 260px;
+  height: 330px;
+}
+ul{list-style: none;}
+ul li{
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+button{
+  position: absolute;
+  bottom: 50px;
+  right : 50px;
+}

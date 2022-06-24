@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplication Table of 6, 7 - for 반복문</title>
+</head>
+<body>
+    <h1>Multiplication Table of <span id="x">x</span>.</h1>
+    Please enter a number:
+    <input type="text" id="myNum">
+    <button onclick="runGugudan()">OK</button><br>
+    <!-- <div id="outPut"></div> -->
+    <script>
+        function runGugudan() {
+            let strN = document.getElementById("myNum").value;
+            let n = Number(strN);
+            document.getElementById("x").innerHTML = n;
+            for (let i = 1; i <= 9; i++) {
+                let result = n * i;
+                document.write(n+" x "+i+" = "+result+"<br>");
+                // document.getElementById("outPut").innerHTML = (n+" x "+i+" = "+result+"<br>");
+            }
+        }
+    </script>
+</body>
+</html>

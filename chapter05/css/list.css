@@ -1,0 +1,21 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    background-color: #eee;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+}
+.close{
+    /* x를 배치-포지셔닝 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+}
+.close:hover{
+    background-color: rgb(36, 36, 182);
+    color: white;
+}

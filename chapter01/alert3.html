@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>자바 스크립트 예제</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>The write() Method</h2>
+
+    <p>Using document.write() after a document is loaded, deletes all existing HTML:</p>
+
+    <button onclick="myFunction()">Click me!</button>
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+        // document.write("Hello World");
+        document.getElementById("demo").innerHTML = "<h2>Hello World!!</h2>";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 만들기</title>
+</head>
+<body>
+    <!-- 매개변수로 정수를 전달받아 제곱수를 구하는 함수 만들기 -->
+    <h2>계산 결과</h2>
+    <p id="demo"></p>
+    <script>
+        /*function square(x){
+            return x * x;
+        }*/
+
+        //익명 함수로 정의
+        var square = function(x){
+            return x * x;
+        }
+
+        var result = square(10);
+        document.getElementById("demo").innerHTML = result;
+        //특정 위치(id 선택자가 있는 위치)로 넣을 때 사용
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - while문</title>
+</head>
+<body>
+    <script>
+        //1부터 더했을때 100이 넘는 자연수 구하기
+        var n = 0, sum = 0;
+        
+        while(true){  
+            n += 1;
+            sum += n;
+            if(sum > 100)
+                break;
+        }
+        document.write("n =" + n + '<br>');
+        document.write("sum = " + sum);
+    </script>
+</body>
+</html>

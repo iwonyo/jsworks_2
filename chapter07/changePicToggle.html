@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트</title>
+</head>
+<body>
+    <div id="container">
+        <img src="images/cup-1.png" id="pic" >
+    </div>
+    
+    <script>
+        let pic = document.getElementById("pic")
+        
+        let sw = true;
+
+        pic.onclick = function(){
+            if(sw){ //sw == true
+                pic.src ="images/cup-2.png";
+                sw = false;
+            }else{
+                pic.src ="images/cup-1.png";
+                sw = true;
+            }
+        }
+    </script>
+</body>
+</html>

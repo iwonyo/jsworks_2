@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - 이중 for문</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <script>
+        //5행 5열의 별 출력
+        let i, j;
+        
+        for(i = 1; i <= 5; i++){ //행이 5번 반복
+            for(j = 1; j <= 5; j++){ //열이 5번 반복
+                document.write("가")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+
+        //직각삼각형 모양의 별
+        for(i = 1; i <= 5; i++){ //행이 5번 반복
+            for(j = 1; j <= i; j++){ //열이 5번 반복
+                document.write("*")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+         /*
+          i = 1,  j = 1             *
+          i = 2,  j = 1, 2          **
+          i = 3,  j = 1, 2, 3       ***
+          i = 4,  j = 1, 2, 3, 4    ****
+          i = 4,  j = 1, 2, 3, 4, 5 *****
+        */
+
+        //역 직각삼각형 모양
+        for(i = 1; i <= 5; i++){ //행이 5번 반복
+            for(j = 1; j <= 6 - i; j++){ //열이 5번 반복
+                document.write("*")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+
+        //역 직각삼각형 모양
+        for(i = 1; i <= 5; i++){ //행이 5번 반복
+            for(j = 5; j >= i; j--){ //열이 5번 반복
+                document.write("*")
+            }
+            document.write('<br>');  //행 바꿈
+        }
+
+    </script>
+</body>
+</html>

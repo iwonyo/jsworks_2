@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트</title>
+</head>
+<body>
+    <!-- 태그를 사용해서 onclick 구현 -->
+    <!-- <h1 onclick="this.innerHTML='으악!'">여기를 클릭해 주세요!</h1> -->
+
+    <h1 onclick="changeText(this)">Click on this text!;</h1>
+
+    <script>
+        function changeText(ojb){
+            ojb.innerHTML = "Ooops!";
+        }
+    </script>
+
+</body>
+</html>
